@@ -16,10 +16,7 @@ public class HelloworldController {
 
     @GetMapping("/timeStamp")
     public String timeStamp() {
-        LocalDateTime now = LocalDateTime.now();
-        String nowTime = now.format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
-        return nowTime;
-
+        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
     }
 }
 
